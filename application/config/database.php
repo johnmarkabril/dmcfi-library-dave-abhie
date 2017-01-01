@@ -76,15 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-<<<<<<< HEAD
 	'username' => 'u425612473_dmcfi',
 	'password' => 'S3XTefH4WVGSW8n3',
 	'database' => 'u425612473_dmcfi',
-=======
-	'username' => 'dabhie',
-	'password' => 'evvG5um7xDhRrDYb',
-	'database' => 'librarysystem',
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

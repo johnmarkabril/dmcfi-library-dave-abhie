@@ -1,5 +1,4 @@
 <div class="ibox-content full-height">
-<<<<<<< HEAD
 	<div class="form-group">
 		<input type="text" class="form-control full-width" placeholder="Search ...." />
 	</div>
@@ -26,7 +25,6 @@
 	    			?>
 	    		</span>
 	    	</h4>
-=======
 	<div class="panel panel-default margin-bottom" style="background-color: #ED5565;">
 	  	<div class="panel-body text-center def-color">
 	    	<h3 class="text-bold">Time remaining</h3>
@@ -39,12 +37,10 @@
 	  	<div class="panel-body text-center def-color">
 	    	<h3 class="text-bold">Borrowed book/s</h3>
 	    	<h3 class="no-margin">3</h3>
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 	  	</div>
 	</div>
 
 	<div class="panel panel-default no-border no-margin">
-<<<<<<< HEAD
 	  	<div class="panel-body def-color padding-top-bottom-ten" style="background-color: #E74C3C;">
 	    	<h4 class="no-margin">Book Category</h4>
 	  	</div>
@@ -66,7 +62,6 @@
 		<?php		
 			}
 		?>
-=======
 	  	<div class="panel-body def-color" style="background-color: #1AB394;">
 	    	<h3 class="text-bold no-margin"><center>Book Category</center></h3>
 	  	</div>
@@ -97,7 +92,6 @@
 			<span class="badge">8</span>
 			Chemistry
 		</li>
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 	</ul>
 
 

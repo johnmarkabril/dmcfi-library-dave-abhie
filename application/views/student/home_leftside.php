@@ -15,12 +15,9 @@
 <div class="padding-top">
 	<div class="ibox-content" id="search_function">
 		<div class="form-group">
-<<<<<<< HEAD
 			<input type="text" class="full-width form-control search" placeholder="Search book ...." />
-=======
 			<label>Search a book</label>
 			<input type="text" class="full-width form-control search"/>
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 		</div>
 
 		<div class="row">
@@ -30,7 +27,6 @@
 						foreach ( $get_all_book as $gab ) :
 				?>
 					<div class="col-sm-3">
-<<<<<<< HEAD
 						<a data-toggle="modal" data-target="#bookSpec<?php echo $gab->isbn; ?>">
 							<div class="ibox">
 							    <div class="ibox-content product-box">
@@ -45,7 +41,6 @@
 							    </div>
 							</div>
 						</a>
-=======
 						<div class="ibox">
 						    <div class="ibox-content product-box">
 						        <div>
@@ -58,7 +53,6 @@
 						        </div>
 						    </div>
 						</div>
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 					</div>
 				<?php
 						endforeach;
@@ -69,7 +63,6 @@
 	</div>
 </div>
 
-<<<<<<< HEAD
 <?php
 	if ( ! empty( $get_all_book ) ) {
 		foreach ( $get_all_book as $gab ) :
@@ -92,5 +85,3 @@
 		endforeach;
 	}
 ?>
-=======
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59

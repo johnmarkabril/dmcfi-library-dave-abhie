@@ -8,12 +8,8 @@ class Home extends CI_Controller {
         parent::__construct();
         $this->load->model('Users_model');
         $this->load->model('Books_model');
-<<<<<<< HEAD
         $this->load->model('Bookcategory_model');
         $this->load->model('Borrowedbook_model');
-
-=======
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
         $this->curpage = "Home";
     }
 
@@ -22,13 +18,10 @@ class Home extends CI_Controller {
 		$datasess = $this->session->userdata['session_data'];
 		if ( !empty ($datasess) ) {
 			$details = array (
-<<<<<<< HEAD
 				'get_all_book'		=>	$this->Books_model->get_all_book(),
 				'get_all_category'	=>	$this->Bookcategory_model->get_all_category(),
 				'get_specific_borrowed_book'	=>	$this->Borrowedbook_model->get_specific_borrowed_book($datasess->IDNO)
-=======
 				'get_all_book'		=>	$this->Books_model->get_all_book()
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 			);
 
 			$data['content']	=	$this->load->view('student/home', $details, TRUE);
@@ -38,14 +31,5 @@ class Home extends CI_Controller {
 			redirect('/');
 		}
 	}
-
-<<<<<<< HEAD
-	public function asdf()
-	{
-		echo "asdf";
-	}
-
-=======
->>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
 	
 }
