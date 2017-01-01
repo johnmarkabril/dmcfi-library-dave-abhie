@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+<<<<<<< HEAD
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+=======
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L] 
+>>>>>>> 728dcf5425cacb607b2de2c6f0c616b1a44ebb59
+</IfModule>
