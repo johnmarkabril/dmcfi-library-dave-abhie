@@ -16,8 +16,6 @@
 	<div class="ibox-content" id="search_function">
 		<div class="form-group">
 			<input type="text" class="full-width form-control search" placeholder="Search book ...." />
-			<label>Search a book</label>
-			<input type="text" class="full-width form-control search"/>
 		</div>
 
 		<div class="row">

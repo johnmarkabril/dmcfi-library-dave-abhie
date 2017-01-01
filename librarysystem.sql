@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2016 at 11:47 AM
+-- Generation Time: Jan 01, 2017 at 11:01 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -49,6 +49,25 @@ CREATE TABLE `book` (
 
 INSERT INTO `book` (`isbn`, `titleOfbook`, `author`, `copyright`, `publisher`, `placeOfpublicity`, `copies`, `subject`, `classnumber`, `registeredby`, `timeregister`, `dateregister`, `status`, `imageurl`) VALUES
 ('acrsewasfec', 'Accessible EPUB 3', 'Matt Garrish', '', '', '', '10', 'Information Technology', 0, 'Abhie Faa', '', '', '1', 'AccessibleEPUB3.gif');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `book_category`
+--
+
+CREATE TABLE `book_category` (
+  `NO` int(11) NOT NULL,
+  `CATEGORYNAME` varchar(100) NOT NULL,
+  `DELETION` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `book_category`
+--
+
+INSERT INTO `book_category` (`NO`, `CATEGORYNAME`, `DELETION`) VALUES
+(1, 'Information Technology', 0);
 
 -- --------------------------------------------------------
 
@@ -145,16 +164,17 @@ CREATE TABLE `online_user` (
   `EMAILADDRESS` varchar(100) NOT NULL,
   `PHONENUMBER` varchar(15) NOT NULL,
   `POSITION` varchar(50) NOT NULL,
-  `STATUS` varchar(50) NOT NULL
+  `STATUS` varchar(50) NOT NULL,
+  `IMAGEURL` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `online_user`
 --
 
-INSERT INTO `online_user` (`NO`, `FIRSTNAME`, `LASTNAME`, `YEAR`, `SECTION`, `IDNO`, `PASSWORD`, `ADDRESS`, `EMAILADDRESS`, `PHONENUMBER`, `POSITION`, `STATUS`) VALUES
-(1, 'Avegail', 'Faa', 'Fourth Year', 'A', 'C-006111-13', 'bd41076a7ad3ab2e8d8a4d2554a70a89', '140 10th st. 10th ave. Caloocan City', 'abhiefaa@gmail.com', '09123456789', 'Librarian', 'Registered'),
-(2, 'Rikki Dave', 'Dizon', 'Fourth Year', 'A', 'C-007387-14', 'c677b023926f1e851fab9a43ef22a2e3', '140 10th st. 10th ave. Caloocan City', 'davedizon@gmail.com', '09123456789', 'Student', 'Registered');
+INSERT INTO `online_user` (`NO`, `FIRSTNAME`, `LASTNAME`, `YEAR`, `SECTION`, `IDNO`, `PASSWORD`, `ADDRESS`, `EMAILADDRESS`, `PHONENUMBER`, `POSITION`, `STATUS`, `IMAGEURL`) VALUES
+(1, 'Avegail', 'Faa', 'Fourth Year', 'A', 'C-006111-13', 'bd41076a7ad3ab2e8d8a4d2554a70a89', '140 10th st. 10th ave. Caloocan City', 'abhiefaa@gmail.com', '09123456789', 'Librarian', 'Registered', ''),
+(2, 'Rikki Dave', 'Dizon', 'Fourth Year', 'A', 'C-007387-14', 'c677b023926f1e851fab9a43ef22a2e3', '140 10th st. 10th ave. Caloocan City', 'davedizon@gmail.com', '09123456789', 'Student', 'Registered', '13239007_1071915199514122_2204229994408708868_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -192,6 +212,12 @@ ALTER TABLE `book`
   ADD PRIMARY KEY (`isbn`,`classnumber`);
 
 --
+-- Indexes for table `book_category`
+--
+ALTER TABLE `book_category`
+  ADD PRIMARY KEY (`NO`);
+
+--
 -- Indexes for table `borrowedbook`
 --
 ALTER TABLE `borrowedbook`
@@ -219,6 +245,11 @@ ALTER TABLE `registrationforstudent`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `book_category`
+--
+ALTER TABLE `book_category`
+  MODIFY `NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `borrowedbook`
 --

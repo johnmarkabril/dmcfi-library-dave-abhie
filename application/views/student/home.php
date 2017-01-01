@@ -3,10 +3,6 @@
 		<div class="col-md-9 padding-all">
 			<?php $this->load->view('student/home_leftside'); ?>
 		</div>
-		<div class="col-md-3 padding-all">
-		<div class="col-sm-9 padding-all">
-			<?php $this->load->view('student/home_leftside'); ?>
-		</div>
 		<div class="col-sm-3 padding-all">
 			<?php $this->load->view('student/home_rightside'); ?>
 		</div>

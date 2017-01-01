@@ -25,6 +25,8 @@
 	    			?>
 	    		</span>
 	    	</h4>
+	    </div>
+	</div>
 	<div class="panel panel-default margin-bottom" style="background-color: #ED5565;">
 	  	<div class="panel-body text-center def-color">
 	    	<h3 class="text-bold">Time remaining</h3>
@@ -65,7 +67,7 @@
 	  	<div class="panel-body def-color" style="background-color: #1AB394;">
 	    	<h3 class="text-bold no-margin"><center>Book Category</center></h3>
 	  	</div>
-	</div>
+	</ul>
 
 	<ul class="list-group">
 		<li class="list-group-item no-border">

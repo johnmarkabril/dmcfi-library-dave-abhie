@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 			$details = array (
 				'get_all_book'		=>	$this->Books_model->get_all_book(),
 				'get_all_category'	=>	$this->Bookcategory_model->get_all_category(),
-				'get_specific_borrowed_book'	=>	$this->Borrowedbook_model->get_specific_borrowed_book($datasess->IDNO)
+				'get_specific_borrowed_book'	=>	$this->Borrowedbook_model->get_specific_borrowed_book($datasess->IDNO),
 				'get_all_book'		=>	$this->Books_model->get_all_book()
 			);
 
