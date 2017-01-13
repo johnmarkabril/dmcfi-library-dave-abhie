@@ -27,13 +27,6 @@
 	    	</h4>
 	    </div>
 	</div>
-	<div class="panel panel-default margin-bottom" style="background-color: #ED5565;">
-	  	<div class="panel-body text-center def-color">
-	    	<h3 class="text-bold">Time remaining</h3>
-	    	<h3 class="no-margin">2 days</h3>
-	    	<h6 class="no-margin">Introducing to Programming with C++</h6>
-	  	</div>
-	</div>
 	
 	<div class="panel panel-default margin-bottom" style="background-color: #23C6C8;">
 	  	<div class="panel-body text-center def-color">
@@ -64,36 +57,6 @@
 		<?php		
 			}
 		?>
-	  	<div class="panel-body def-color" style="background-color: #1AB394;">
-	    	<h3 class="text-bold no-margin"><center>Book Category</center></h3>
-	  	</div>
-	</ul>
-
-	<ul class="list-group">
-		<li class="list-group-item no-border">
-			<span class="badge">14</span>
-			Agriculture, Aquaculture &amp; Food Science
-		</li>
-
-		<li class="list-group-item no-border">
-			<span class="badge">35</span>
-			Architecture &amp; Planning
-		</li>
-
-		<li class="list-group-item no-border">
-			<span class="badge">30</span>
-			Art &amp; Applied Arts
-		</li>
-
-		<li class="list-group-item no-border">
-			<span class="badge">11</span>
-			Business, Economics, Finance &amp; Accounting
-		</li>
-
-		<li class="list-group-item no-border">
-			<span class="badge">8</span>
-			Chemistry
-		</li>
 	</ul>
 
 

@@ -8,7 +8,6 @@
 		        </li>
 		        <li>
 		            <a href="<?php echo base_url(); ?>" style="font-size: 26px;color: #ECF0F1;">Divine Mercy Library Portal</a>
-		            <a href="#" style="font-size: 26px;color: #ECF0F1;">Divine Mercy Library Portal</a>
 		        </li>
 		        	
 		        </div>

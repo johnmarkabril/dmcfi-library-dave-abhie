@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'u425612473_dmcfi',
-	'password' => 'S3XTefH4WVGSW8n3',
-	'database' => 'librarysystem',
+	'hostname' => '31.220.110.2',
+	'username' => 'u425612473_dmcda',
+	'password' => 'dmcfilibrary',
+	'database' => 'u425612473_dmcda',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

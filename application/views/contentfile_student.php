@@ -16,6 +16,9 @@
 				case 'Login':
 					echo $content;
 					break;
+				case 'Sign-up':
+					echo $content;
+					break;
 				case 'Home':
 					echo $content;
 					break;
