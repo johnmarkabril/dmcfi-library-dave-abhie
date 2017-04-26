@@ -13,6 +13,9 @@
 				$this->load->view('common/navtop_student');
 			}
 			switch ( $curpage ) {
+				case 'Book':
+					echo $content;
+					break;
 				case 'Login':
 					echo $content;
 					break;

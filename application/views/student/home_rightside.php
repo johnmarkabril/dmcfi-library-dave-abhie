@@ -1,38 +1,15 @@
-<div class="ibox-content full-height">
-	<div class="form-group">
-		<input type="text" class="form-control full-width" placeholder="Search ...." />
-	</div>
-	
-	<div class="panel panel-default margin-bottom no-border no-margin">
-	  	<div class="panel-body def-color padding-top-bottom-ten" style="background-color: #E74C3C;">
-	    	<h4 class="no-margin">Announcement
-	    	</h4>
-	  	</div>
-	  	<ul class="list-group" id="categ_stud">
-			<li class="list-group-item no-border no-padding-bottom">
-				<a class="text-bold">Event title</a>
-				<div><small>December 15, 2016</small></div>
-			</li>
-		</ul>
-	</div>
+<div class="ibox-content " style="min-height: 500px;">
 
 	<div class="panel panel-default margin-bottom no-border no-margin">
 	  	<div class="panel-body def-color padding-top-bottom-ten" style="background-color: #E74C3C;">
 	    	<h4 class="no-margin">Borrowed book/s 
 	    		<span class="pull-right">
 	    			<?php
-	    				echo $get_specific_borrowed_book;
+	    				echo $get_specific_borrowed_book_rows;
 	    			?>
 	    		</span>
 	    	</h4>
 	    </div>
-	</div>
-	
-	<div class="panel panel-default margin-bottom" style="background-color: #23C6C8;">
-	  	<div class="panel-body text-center def-color">
-	    	<h3 class="text-bold">Borrowed book/s</h3>
-	    	<h3 class="no-margin">3</h3>
-	  	</div>
 	</div>
 
 	<div class="panel panel-default no-border no-margin">
@@ -46,8 +23,8 @@
 			if ( !empty($get_all_category) ) {
 				foreach ( $get_all_category as $gac ) :
 		?>
-					<li class="list-group-item no-border">
-						<a class="text-bold"><?php echo $gac->CATEGORYNAME; ?></a>
+					<li class="list-group-item no-border" style="text-align: right">
+						<a class="text-bold" href="<?php echo base_url(); ?>student/book/category/<?php echo $gac->CATEGORYNAME; ?>"><?php echo $gac->CATEGORYNAME; ?></a>
 					</li>
 		<?php
 				endforeach;

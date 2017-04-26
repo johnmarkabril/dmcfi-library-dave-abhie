@@ -14,10 +14,7 @@
 		    </ul>
 			<ul class="nav navbar-top-links navbar-right text-center">
 		        <li>
-		            <a href="#">Manage Book</a>
-		        </li>
-		        <li>
-		            <a href="<?php echo base_url();?>student/profile/uname/<?php echo $this->session->userdata('session_data')->IDNO; ?>">Profile</a>
+		            <a href="<?php echo base_url();?>student/profile/id/<?php echo $this->session->userdata('session_data')->IDNO; ?>">Profile</a>
 		        </li>
 		        <li>
 		            <a href="<?php echo base_url();?>logout">Log out</a>

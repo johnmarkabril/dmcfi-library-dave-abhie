@@ -21,7 +21,7 @@ class Login extends CI_Controller {
 
 			if($this->form_validation->run() == FALSE){
 				$details = array (
-
+					'message'		=>	""
 				);
 				$data['content']	=	$this->load->view('login', $details, TRUE);
 				$data['curpage']	= 	$this->curpage;
@@ -32,7 +32,7 @@ class Login extends CI_Controller {
 				$valid = $this->Users_model->check_idnum_pass($c_idnum, $c_password);
 				$this->session->set_userdata('account_type', $valid->POSITION);
 				if($valid != false){
-					if ($_SESSION['account_type'] == "Student") {
+					if ($_SESSION['account_type'] == "User") {
 						$data = $this->session->set_userdata('session_data',$valid);
 						redirect('/student');
 						// print_r($data);
@@ -46,6 +46,18 @@ class Login extends CI_Controller {
 			}
 		}
 	}
-
+	public function message()
+	{
+		if ( !empty($this->session->userdata['session_data']) ) {
+			redirect('/student');
+		} else {
+			$details = array(
+				'message'		=>	'Signup Completed. Please wait to verify your account by the librarian.'
+			);
+			$data['content']	=	$this->load->view('login', $details, TRUE);
+			$data['curpage']	= 	$this->curpage;
+			$this->load->view('contentfile_student', $data);
+		}
+	}
 	
 }

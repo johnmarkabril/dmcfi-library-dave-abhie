@@ -1,18 +1,4 @@
-<div class="ibox-content">
-	<img class="img-responsive full-width half-height" src="<?php echo base_url(); ?>public/img/image1.jpg" />
-	<div class="padding-top-bottom">
-		<h4>
-			The Divine Mercy College Foundation Inc. is an institution with an aim to help young people improve their lives, we are committed to develop our youth  to become competent and better individuals.
-		</h4>
-		<h4>
-			Our faculty is comprised of qualified and competent educators.
-			We use modern mulit-media instructional facilities, and our campus has Wi-Fi and all our classrooms are air conditioned.
-		</h4>
-	</div>
-</div>
-
-
-<div class="padding-top">
+<div class="">
 	<div class="ibox-content" id="search_function">
 		<div class="form-group">
 			<input type="text" class="full-width form-control search" placeholder="Search book ...." />
@@ -21,8 +7,8 @@
 		<div class="row">
 			<div class="list">
 				<?php
-					if ( ! empty( $get_all_book ) ) {
-						foreach ( $get_all_book as $gab ) :
+					if ( ! empty( $get_book_per_list ) ) {
+						foreach ( $get_book_per_list as $gab ) :
 				?>
 					<div class="col-sm-3">
 						<a data-toggle="modal" data-target="#bookSpec<?php echo $gab->NO; ?>">
@@ -31,14 +17,10 @@
 							        <div>
 							            <img class="img-responsive full-width" src="<?php echo base_url(); ?>public/img/<?php echo $gab->IMAGEURL;?>" style="height: 180px;"/>
 							        </div>
-							        <div class="product-desc" style="height: 170px;">
+							        <div class="product-desc" style="height: 90px;">
 							            <left>
-							            	<div><label>ISBN</label> : <small class="text-muted title"><?php echo $gab->ISBN; ?></small></div>
-							            	<div><label>Available QTY</label> : <small class="text-muted title"><?php echo $gab->QUANTITY; ?></small></div>
+							                <small class="text-muted title"><?php echo $gab->TITLE; ?></small>
 							            </left>
-							            <center>
-							            	<div><label class="text-muted title"><?php echo $gab->TITLE; ?></label></div>
-							            </center>
 							        </div>
 							    </div>
 							</div>
@@ -54,8 +36,8 @@
 </div>
 
 <?php
-	if ( ! empty( $get_all_book ) ) {
-		foreach ( $get_all_book as $gab ) :
+	if ( ! empty( $get_book_per_list ) ) {
+		foreach ( $get_book_per_list as $gab ) :
 ?>
 			<div class="modal fade" id="bookSpec<?php echo $gab->NO; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  	<div class="modal-dialog modal-sm" role="document">

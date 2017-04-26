@@ -7,6 +7,14 @@
             </div>
             <h3>Library Portal of Divine Mercy College</h3>
             <p>Login in.</p>
+            <?php
+                if ( !empty($message) ) {
+            ?>
+                    <div class="ibox-content no-border" style="text-align: left;"><?php echo $message; ?></div>
+                    <div class="padding-top"></div>
+            <?php
+                }
+            ?>
             <?php 
                 echo form_open('Login');
             ?>
@@ -19,7 +27,6 @@
                     </div>
                     <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
 
-                    <a href="#"><small>Forgot password?</small></a>
                     <p class="text-muted text-center"><small>Do not have an account?</small></p>
                     <a class="btn btn-sm btn-white btn-block" href="<?php echo base_url(); ?>signup">Create an account</a>
                 </form>
